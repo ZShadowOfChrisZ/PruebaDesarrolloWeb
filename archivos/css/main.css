@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: 'Heebo', sans-serif;
+}
+.imagen {
+    width: 100%;
+    height: 300px;
+    background: url("https://img.ltwebstatic.com/images3_pi/2022/05/12/1652346682338b6a969446627cec2febee497e992a_thumbnail_600x.webp");
+    background-size: cover;
+    text-align: center;
+}
+.fondo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.486);
+}
+.imagen .fondo h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+
+.fondoGris {
+    background-color: #3d3c3c;
+}
+
+.redondeado {
+    border-radius: 10px;
+}
