@@ -14,152 +14,196 @@
     <title>Bandanas</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Bandanas</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Nosotros</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Tienda</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Otra</a>
-              </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
-            </li>
-          </ul>
-        </div>
-    </nav>
-    <div class="carruselPrincipal">
-        <div class="imagen">
-            <a href="">
-                <div class="fondo">
-                    <h1 class="text-light">Sección numero 1</h1>
-                </div>
-            </a>
-        </div>
-        <div class="imagen">
-            <a href="">
-                <div class="fondo">
-                    <h1 class="text-light">Sección numero 2</h1>
-                </div>
-            </a>
-        </div>
-        <div class="imagen">
-            <a href="">
-                <div class="fondo">
-                    <h1 class="text-light">Sección numero 3</h1>
-                </div>
-            </a>
-        </div>
-    </div>
-    <div class="container">
-        <div class="sobrenosotros mb-5">
-            <h2 class="text-center mt-5 mb-3">Sobre Nosotros</h2>
-            <hr>
-            <div class="row mt-5">
-                <div class="col-lg-6">
-                    <img class="w-100" src="https://img.ltwebstatic.com/images3_pi/2022/05/12/1652346682338b6a969446627cec2febee497e992a_thumbnail_600x.webp" alt="">
-                </div>
-                <div class="col-lg-6">
-                    <p>
-                        La misión de IngeMotor es ofrecer soluciones duraderas, fiables y eficientes a las incidencias 
-                    mecánicas en un automóvil, a su vez orientar, asesorar de una forma profesional y experta a 
-                    nuestra clientela en el buen uso y mantenimiento de su vehículo y así llegar a una decisión 
-                    acertada
-                    </p>
-                    <p>
-                        La misión de IngeMotor es ofrecer soluciones duraderas, fiables y eficientes a las incidencias 
-                    mecánicas en un automóvil, a su vez orientar, asesorar de una forma profesional y experta a 
-                    nuestra clientela en el buen uso y mantenimiento de su vehículo y así llegar a una decisión 
-                    acertada
-                    </p>
-                    <p>
-                        La misión de IngeMotor es ofrecer soluciones duraderas, fiables y eficientes a las incidencias 
-                    mecánicas en un automóvil, a su vez orientar, asesorar de una forma profesional y experta a 
-                    nuestra clientela en el buen uso y mantenimiento de su vehículo y así llegar a una decisión 
-                    acertada
-                    </p>
-                </div>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Bandanas</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tienda</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Donaciones</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contacto</a>
+                </li>
+              </ul>
             </div>
+        </nav>
+    </header>
+    <main>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active altoCarrusel">
+                <a href="">
+                    <div class="fondo">
+                        <h1 class="text-light">Conoce más sobre nosotros.</h1>
+                    </div>
+                    <img class="hiddenLg w-100" src="archivos/img/nosotros.jpg" alt="Nosotros">
+                    <img class="hiddenMd w-100" src="archivos/img/nosotros2.jpg" alt="Nosotros">
+                </a>
+              </div>
+              <div class="carousel-item altoCarrusel">
+                <a href="">
+                    <div class="fondo">
+                        <h1 class="text-light">Visita nuestra tienda de productos</h1>
+                    </div>
+                    <img class="hiddenLg w-100" src="archivos/img/gatoperro.jpg" alt="Gato y Perro">
+                    <img class="hiddenMd w-100" src="archivos/img/gatoperro2.jpg" alt="Gato y Perro">
+                </a>
+              </div>
+              <div class="carousel-item altoCarrusel">
+                <a href="">
+                    <div class="fondo">
+                        <h1 class="text-light">Haz una donación, sé parte.</h1>
+                    </div>
+                    <img class="hiddenLg w-100" src="archivos/img/caridad-mascotas.jpg" alt="Donaciones">
+                    <img class="hiddenMd w-100" src="archivos/img/caridad-mascotas2.jpg" alt="Donaciones">
+                </a>
+              </div>
+              <div class="carousel-item altoCarrusel">
+                <a href="">
+                    <div class="fondo">
+                        <h1 class="text-light">Contáctanos</h1>
+                    </div>
+                    <img class="hiddenLg w-100" src="archivos/img/mascotas.jpg" alt="Donaciones">
+                    <img class="hiddenMd w-100" src="archivos/img/mascotas2.jpg" alt="Donaciones">
+                </a>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Siguiente</span>
+            </a>
         </div>
-        <div class="mecanicos mt-3">
-            <h2 class="text-center mb-2 mt-5">Nuestros Productos</h2>
-            <hr>
-            <div class="row">
-                <div class="col-lg-4 mt-3">
-                    <div class="card">
-                        <img class="w-100" src="https://perryellis.vteximg.com.br/arquivos/ids/220522-700-1000/label-1.jpg" alt="">
-                        <div class="card-body">
-                            <p class="text-center"><b>Gucci</b></p>
-                            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate officia dolorem voluptatem quam alias mollitia ipsa doloremque. Labore, nemo illo. Quam adipisci optio corrupti eligendi soluta labore quae rerum blanditiis!</p>
+        <article class="container">
+            <section>
+                <div class="sobrenosotros mb-5">
+                    <h2 class="text-center mt-5 mb-3">Sobre Nosotros</h2>
+                    <hr>
+                    <div class="row mt-5">
+                        <div class="col-lg-6 mb-3">
+                            <img class="w-100" src="archivos/img/sobre.jpg" alt="">
+                        </div>
+                        <div class="col-lg-6">
+                            <p>
+                                Somos un equipo joven apasionado por los animales y comprometido con su bienestar. 
+                                Nos dedicamos a la venta de artículos para animales, ofreciendo una amplia gama de 
+                                productos de alta calidad para consentir a tus queridas mascotas.
+                            </p>
+                            <p>
+                                Pero no solo nos preocupamos por ofrecer los mejores productos, 
+                                también creemos en hacer una diferencia en la comunidad.
+                                 Por eso, destinamos una parte de nuestras ganancias a realizar
+                                donaciones a organizaciones benéficas que se dedican a ayudar a 
+                                animales en situación de vulnerabilidad.
+                            </p>
+                            <p>
+                                Nuestro objetivo es brindar un servicio excepcional a nuestros clientes, 
+                                ofreciendo productos que cumplan con los más altos estándares de calidad 
+                                y contribuyendo a causas que marcan la diferencia en la vida de los animales 
+                                necesitados.
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 mt-3">
-                    <div class="card">
-                        <img class="w-100" src="https://perryellis.vteximg.com.br/arquivos/ids/220522-700-1000/label-1.jpg" alt="">
-                        <div class="card-body">
-                            <p class="text-center"><b>Gucci</b></p>
-                            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate officia dolorem voluptatem quam alias mollitia ipsa doloremque. Labore, nemo illo. Quam adipisci optio corrupti eligendi soluta labore quae rerum blanditiis!</p>
+            </section>
+            <section>
+                <div class="mt-3">
+                    <h2 class="text-center mb-2 mt-5">Nuestros Productos</h2>
+                    <hr>
+                    <div class="carruselPrincipal w-100">
+                        <div class="p-2">
+                            <div class="card">
+                                <div class="imgCard">
+                                    <img class="w-100" src="https://http2.mlstatic.com/D_NQ_NP_660513-MLC48246348539_112021-O.webp" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <p class="text-center"><b>Collares</b></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2">
+                            <div class="card">
+                                <div class="imgCard">
+                                    <img class="w-100" src="https://ae01.alicdn.com/kf/H50609188758e4a2e86e37c6ae40d8322I.jpg" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <p class="text-center"><b>Bandanas</b></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2">
+                            <div class="card">
+                                <div class="imgCard">
+                                    <img class="w-100" src="https://http2.mlstatic.com/D_NQ_NP_988316-MLC50055148123_052022-O.webp" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <p class="text-center"><b>Correas</b></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 mt-3">
-                    <div class="card">
-                        <img class="w-100" src="https://perryellis.vteximg.com.br/arquivos/ids/220522-700-1000/label-1.jpg" alt="">
-                        <div class="card-body">
-                            <p class="text-center"><b>Gucci</b></p>
-                            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate officia dolorem voluptatem quam alias mollitia ipsa doloremque. Labore, nemo illo. Quam adipisci optio corrupti eligendi soluta labore quae rerum blanditiis!</p>
+            </section>
+            <section>
+                <h4 class="text-center mt-5">CONTÁCTANOS</h4>
+                <div class="formulario p-3 mt-4 mb-5 bg-dark">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label for=""><b class="text-light">Nombre</b></label>
+                                <input class="form-control" placeholder="Nombre Completo" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for=""><b class="text-light">Apellido</b></label>
+                                <input class="form-control" placeholder="Nombre Completo" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for=""><b class="text-light">Email</b></label>
+                                <input class="form-control" placeholder="Nombre Completo" type="text">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label for=""><b class="text-light">Teléfono</b></label>
+                                <input class="form-control" placeholder="Nombre Completo" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for=""><b class="text-light">Celular</b></label>
+                                <input class="form-control" placeholder="Nombre Completo" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for=""><b class="text-light">Nombre</b></label>
+                                <input class="form-control" placeholder="Nombre Completo" type="text">
+                            </div>
                         </div>
                     </div>
+                    <button class="btn btn-light btn-block">Envíar Formulario</button>
                 </div>
-            </div>
-        </div>
-        <h4 class="text-center mt-5">CONTÁCTANOS</h4>
-        <div class="formulario p-3 mt-4 mb-5 bg-dark">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="form-group">
-                        <label for=""><b class="text-light">Nombre</b></label>
-                        <input class="form-control" placeholder="Nombre Completo" type="text">
-                    </div>
-                    <div class="form-group">
-                        <label for=""><b class="text-light">Apellido</b></label>
-                        <input class="form-control" placeholder="Nombre Completo" type="text">
-                    </div>
-                    <div class="form-group">
-                        <label for=""><b class="text-light">Email</b></label>
-                        <input class="form-control" placeholder="Nombre Completo" type="text">
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="form-group">
-                        <label for=""><b class="text-light">Teléfono</b></label>
-                        <input class="form-control" placeholder="Nombre Completo" type="text">
-                    </div>
-                    <div class="form-group">
-                        <label for=""><b class="text-light">Celular</b></label>
-                        <input class="form-control" placeholder="Nombre Completo" type="text">
-                    </div>
-                    <div class="form-group">
-                        <label for=""><b class="text-light">Nombre</b></label>
-                        <input class="form-control" placeholder="Nombre Completo" type="text">
-                    </div>
-                </div>
-            </div>
-            <button class="btn btn-light btn-block">Envíar Formulario</button>
-        </div>
-    </div>
+            </section>
+        </article>
+    </main>
     <footer class="p-5 bg-dark">
         <h5 class="text-center text-light">Bandanas &copy; 2023</h5>
     </footer>

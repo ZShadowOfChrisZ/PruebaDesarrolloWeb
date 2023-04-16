@@ -5,26 +5,22 @@
     border: 0;
     font-family: 'Heebo', sans-serif;
 }
-.imagen {
-    width: 100%;
-    height: 300px;
-    background: url("https://img.ltwebstatic.com/images3_pi/2022/05/12/1652346682338b6a969446627cec2febee497e992a_thumbnail_600x.webp");
-    background-size: cover;
-    text-align: center;
-}
 .fondo {
-    position: relative;
+    position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.486);
+    background-color: rgba(0, 0, 0, 0.404);
+    z-index: 1;
 }
-.imagen .fondo h1 {
+.fondo h1{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
     text-align: center;
+    font-size: 50px;
+    z-index: 2;
 }
 
 .fondoGris {
@@ -33,4 +29,45 @@
 
 .redondeado {
     border-radius: 10px;
+}
+.altoCarrusel {
+    height: 500px !important;
+}
+.carousel-control-prev {
+    height: 500px !important;
+}
+.carousel-control-next {
+    height: 500px !important;
+}
+
+.imgCard {
+    height: 325px;
+}
+
+.hiddenMd {
+    display: none;
+}
+
+@media (max-width: 1775px) {
+  .hiddenLg {
+    display: none;
+  }
+  .hiddenMd {
+    display: block;
+  }
+}
+
+@media (max-width: 700px) {
+    .altoCarrusel {
+        height: 200px !important;
+    }
+    .carousel-control-prev {
+        height: 200px !important;
+    }
+    .carousel-control-next {
+        height: 200px !important;
+    }
+    .fondo h1{
+        font-size: 30px;
+    }
 }
