@@ -193,36 +193,33 @@
                 <h4 class="text-center mt-5">CONTÁCTANOS</h4>
                 <div class="formulario p-3 mt-4 mb-5 bg-dark">
                     <div class="row">
+                       
                         <div class="col-lg-6">
                             <div class="form-group">
-                                <label for=""><b class="text-light">Nombre</b></label>
-                                <input class="form-control" placeholder="Nombre Completo" type="text">
+                                <label for=""><b class="text-light">Nombres</b></label>
+                                <input id="nombre" type="text" name="nombre" class="form-control" placeholder="Nombres">
                             </div>
                             <div class="form-group">
-                                <label for=""><b class="text-light">Apellido</b></label>
-                                <input class="form-control" placeholder="Nombre Completo" type="text">
+                                <label for=""><b class="text-light">Apellidos</b></label>
+                                <input id="apellido" type="text" name="apellido" class="form-control" placeholder="Apellidos">
                             </div>
                             <div class="form-group">
                                 <label for=""><b class="text-light">Email</b></label>
-                                <input class="form-control" placeholder="Nombre Completo" type="text">
+                                <input id="email" class="form-control" placeholder="Email" type="email">
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label for=""><b class="text-light">Teléfono</b></label>
-                                <input class="form-control" placeholder="Nombre Completo" type="text">
+                                <input id="telefono" class="form-control" placeholder="Telefono" type="number">
                             </div>
                             <div class="form-group">
-                                <label for=""><b class="text-light">Celular</b></label>
-                                <input class="form-control" placeholder="Nombre Completo" type="text">
-                            </div>
-                            <div class="form-group">
-                                <label for=""><b class="text-light">Nombre</b></label>
-                                <input class="form-control" placeholder="Nombre Completo" type="text">
+                                <label for=""><b class="text-light">Ciudad</b></label>
+                                <input id="ciudad" class="form-control" placeholder="Ciudad de residencia" type="text">
                             </div>
                         </div>
                     </div>
-                    <button class="btn btn-light btn-block">Envíar Formulario</button>
+                    <button id="boton" class="btn btn-light btn-block">Envíar Formulario</button>
                 </div>
             </section>
         </article>
@@ -321,4 +318,5 @@
 <!-- Slicker -->
 <script src="https://kenwheeler.github.io/slick/slick/slick.js"></script>
 <!-- Js -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="archivos/js/main.js"></script>
