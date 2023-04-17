@@ -15,31 +15,31 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Bandanas</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Nosotros</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Tienda</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Donaciones</a>
-                  </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contacto</a>
-                </li>
-              </ul>
-            </div>
-        </nav>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Bandanas</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li id="navInicio" class="nav-item active">
+              <a class="nav-link" href="">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li id="navNosotros" class="nav-item">
+              <a class="nav-link" id="linkNosotros">Nosotros</a>
+            </li>
+            <li id="navTienda" class="nav-item">
+                <a class="nav-link" id="linkTIenda">Tienda</a>
+              </li>
+              <li id="navDonacion" class="nav-item">
+                <a id="linkDonacion" class="nav-link">Donaciones</a>
+              </li>
+            <li id="navContacto" class="nav-item">
+              <a id="linkContacto" class="nav-link">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <main>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -97,7 +97,7 @@
             </a>
         </div>
         <article class="container">
-            <section>
+            <section id="nosotros">
                 <div class="sobrenosotros mb-5">
                     <h2 class="text-center mt-5 mb-3">Sobre Nosotros</h2>
                     <hr>
@@ -128,7 +128,7 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <section id="donacion">
                 <h2 class="text-center mt-5 mb-3">Organizaciones</h2>
                 <div class="row">
                     <div class="col-lg-6 text-center">
@@ -151,13 +151,13 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <section id="tienda">
                 <div class="mt-3">
                     <h2 class="text-center mb-2 mt-5">Nuestros Productos</h2>
                     <hr>
                     <div class="carruselPrincipal w-100">
                         <div class="p-2">
-                            <div class="card">
+                            <div id="collares" class="card">
                                 <div class="imgCard">
                                     <img class="w-100" src="https://http2.mlstatic.com/D_NQ_NP_660513-MLC48246348539_112021-O.webp" alt="">
                                 </div>
@@ -167,7 +167,7 @@
                             </div>
                         </div>
                         <div class="p-2">
-                            <div class="card">
+                            <div id="bandanas" class="card">
                                 <div class="imgCard">
                                     <img class="w-100" src="https://ae01.alicdn.com/kf/H50609188758e4a2e86e37c6ae40d8322I.jpg" alt="">
                                 </div>
@@ -177,7 +177,7 @@
                             </div>
                         </div>
                         <div class="p-2">
-                            <div class="card">
+                            <div id="correas" class="card">
                                 <div class="imgCard">
                                     <img class="w-100" src="https://http2.mlstatic.com/D_NQ_NP_988316-MLC50055148123_052022-O.webp" alt="">
                                 </div>
@@ -188,6 +188,116 @@
                         </div>
                     </div>
                 </div>
+
+
+                <div id="productoCollares" class="p-5 puntero">
+                  <h2>Collares</h2>
+                  <div class="row">
+                      <div class="col-lg-4">
+                         <div class="card">
+                          <div class="card-body">
+                              <img class="w-100" src="https://img.ltwebstatic.com/images3_pi/2022/01/18/1642486136161d3e8cae6f09bda813b29c6d59588d_thumbnail_600x.webp" alt="">
+                              <h4 class="text-center mt-3">Collar Corazón</h4>
+                              <h5 class="text-center">$10.000</h5>
+                              <button class="btn btn-block btn-primary">Comprar</button>
+                          </div>
+                         </div>
+                      </div>
+                      <div class="col-lg-4">
+                          <div class="card">
+                           <div class="card-body">
+                               <img class="w-100" src="https://img.ltwebstatic.com/images3_pi/2021/10/25/1635150518c1c82d73ada7190782cc80edab85d377_thumbnail_600x.webp" alt="">
+                               <h4 class="text-center mt-3">Collar Celeste</h4>
+                               <h5 class="text-center">$10.000</h5>
+                               <button class="btn btn-block btn-primary">Comprar</button>
+                           </div>
+                          </div>
+                       </div>
+                       <div class="col-lg-4">
+                          <div class="card">
+                           <div class="card-body">
+                               <img class="w-100" src="https://img.ltwebstatic.com/images3_pi/2023/03/28/16799747240554ce54fbceaf0b6f65a5512e910ef9_thumbnail_600x.webp" alt="">
+                               <h4 class="text-center mt-3">Collar Rojo</h4>
+                               <h5 class="text-center">$10.000</h5>
+                               <button class="btn btn-block btn-primary">Comprar</button>
+                           </div>
+                          </div>
+                       </div>
+                  </div>
+              </div>
+
+              <div id="productoBandanas" class="p-5 puntero">
+                  <h2>Bandanas</h2>
+                  <div class="row">
+                      <div class="col-lg-4">
+                         <div class="card">
+                          <div class="card-body">
+                              <img class="w-100" src="https://img.ltwebstatic.com/images3_pi/2023/03/28/1679987540155e24cdfa10b63dd427916da80cff77_thumbnail_600x.webp" alt="">
+                              <h4 class="text-center mt-3">Bandana Arcoiris</h4>
+                              <h5 class="text-center">$9.000</h5>
+                              <button class="btn btn-block btn-primary">Comprar</button>
+                          </div>
+                         </div>
+                      </div>
+                      <div class="col-lg-4">
+                          <div class="card">
+                           <div class="card-body">
+                               <img class="w-100" src="https://img.ltwebstatic.com/images3_pi/2022/07/18/1658122032b7f0b3825b6110115d1b4f7b197329cb_thumbnail_600x.webp" alt="">
+                               <h4 class="text-center mt-3">Bandana Roja</h4>
+                               <h5 class="text-center">$9.000</h5>
+                               <button class="btn btn-block btn-primary">Comprar</button>
+                           </div>
+                          </div>
+                       </div>
+                       <div class="col-lg-4">
+                          <div class="card">
+                           <div class="card-body">
+                               <img class="w-100" src="https://img.ltwebstatic.com/images3_pi/2023/04/10/1681109577dad850101914c4effef60f3d086fc06f.webp" alt="">
+                               <h4 class="text-center mt-3">Bandana Negra</h4>
+                               <h5 class="text-center">$10.000</h5>
+                               <button class="btn btn-block btn-primary">Comprar</button>
+                           </div>
+                          </div>
+                       </div>
+                  </div>
+              </div>
+
+              <div id="productoCorreas" class="p-5 puntero">
+                  <h2>Correas</h2>
+                  <div class="row">
+                      <div class="col-lg-4">
+                         <div class="card">
+                          <div class="card-body">
+                              <img class="w-100" src="https://img.ltwebstatic.com/images3_pi/2023/02/20/16768580536337e42b1425dee0dfcbcd3d708abeb6_thumbnail_600x.webp" alt="">
+                              <h4 class="text-center mt-3">Correa de Gato</h4>
+                              <h5 class="text-center">$20.000</h5>
+                              <button class="btn btn-block btn-primary">Comprar</button>
+                          </div>
+                         </div>
+                      </div>
+                      <div class="col-lg-4">
+                          <div class="card">
+                           <div class="card-body">
+                               <img class="w-100" src="https://img.ltwebstatic.com/images3_pi/2022/11/03/166743959730336530b3a2bc31a9114b04b2ee7317_thumbnail_600x.webp" alt="">
+                               <h4 class="text-center mt-3">Correa Negra</h4>
+                               <h5 class="text-center">$15.000</h5>
+                               <button class="btn btn-block btn-primary">Comprar</button>
+                           </div>
+                          </div>
+                       </div>
+                       <div class="col-lg-4">
+                          <div class="card">
+                           <div class="card-body">
+                               <img class="w-100" src="https://img.ltwebstatic.com/images3_pi/2022/11/01/1667267532f34ee9d7cb1cd17b3074c3add8206028_thumbnail_600x.webp" alt="">
+                               <h4 class="text-center mt-3">Correa Rosa</h4>
+                               <h5 class="text-center">$15.000</h5>
+                               <button class="btn btn-block btn-primary">Comprar</button>
+                           </div>
+                          </div>
+                       </div>
+                  </div>
+              </div>
+
             </section>
             <section>
                 <h4 class="text-center mt-5">CONTÁCTANOS</h4>

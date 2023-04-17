@@ -53,6 +53,18 @@ height: 200px;
 .puntero {
     cursor: pointer;
 }
+
+#productoCollares {
+    display: none;
+}
+
+#productoCorreas {
+    display: none;
+}
+
+#productoBandanas{
+    display: none;
+}
 @media (max-width: 1775px) {
   .hiddenLg {
     display: none;

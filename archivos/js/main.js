@@ -108,6 +108,69 @@ $(document).ready(function(){
               }); 
         }
     });
+
+
+    $('#collares').click(function(){
+        $('#productoBandanas').hide();
+        $('#productoCorreas').hide();
+        $('#productoCollares').slideDown();
+    })
+
+    $('#correas').click(function(){
+        $('#productoCollares').hide();
+        $('#productoBandanas').hide();
+        $('#productoCorreas').slideDown();
+    })
+
+    $('#bandanas').click(function(){
+        $('#productoCollares').hide();
+        $('#productoCorreas').hide();
+        $('#productoBandanas').slideDown();
+    })
+
+    $('#linkTIenda').click(function(){
+        $("html, body").animate({
+            scrollTop: $("#tienda").offset().top - 220
+        }, 1000);
+        $('#navTienda').addClass("active");
+        $('#navInicio').removeClass("active");
+        $('#navContacto').removeClass("active");
+        $('#navDonacion').removeClass("active");
+        $('#navNosotros').removeClass("active");
+    })
+    $('#linkNosotros').click(function(){
+        $("html, body").animate({
+            scrollTop: $("#nosotros").offset().top - 220
+        }, 1000);
+        $('#navNosotros').addClass("active");
+        $('#navInicio').removeClass("active");
+        $('#navContacto').removeClass("active");
+        $('#navDonacion').removeClass("active");
+        $('#navTienda').removeClass("active");
+    })
+    $('#linkDonacion').click(function(){
+        $("html, body").animate({
+            scrollTop: $("#donacion").offset().top - 220
+        }, 1000);
+        $('#navDonacion').addClass("active");
+        $('#navInicio').removeClass("active");
+        $('#navContacto').removeClass("active");
+        $('#navTienda').removeClass("active");
+        $('#navNosotros').removeClass("active");
+    })
+    $('#linkContacto').click(function(){
+        $("html, body").animate({
+            scrollTop: $("#contacto").offset().top - 220
+        }, 1000);
+        $('#navContacto').addClass("active");
+        $('#navInicio').removeClass("active");
+        $('#navTienda').removeClass("active");
+        $('#navDonacion').removeClass("active");
+        $('#navNosotros').removeClass("active");
+    })
+
+
+
 });
 var toastMixin = Swal.mixin({
     toast: true,
