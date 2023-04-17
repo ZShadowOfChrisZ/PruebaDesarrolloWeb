@@ -47,7 +47,12 @@
 .hiddenMd {
     display: none;
 }
-
+.altoimagen {
+height: 200px;
+}
+.puntero {
+    cursor: pointer;
+}
 @media (max-width: 1775px) {
   .hiddenLg {
     display: none;
